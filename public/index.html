@@ -1,17 +1,116 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    <title>BrziChesse</title>
+
+    
+    <link rel="stylesheet" href="/index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+  <div id="container" class="container">
+
+    <div id="menu" class="menu">
+      <div id="slikaLogo" class="slikaLogo">
+        <img src="/images/brzicheese.png.png" alt="logo">
+      </div>
+
+      <div class="menuItem">
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+      </div>
+
+    </div>
+
+    <div id="foodContainer">
+      <div id="header">
+        <div id="addBox" class="addBox">
+          <i class="fa fa-map-marker yourAddress" id="addAddress"> Your Address</i>
+        </div>
+
+        <div id="util" class="util">
+            <i class="fa fa-search"> Search </i>
+            <i class="fa fa-cart-plus" id="cartBox"> 0 Items </i>
+        </div>
+      </div>
+        
+      <div id="foodItems">
+        <!-- 1. -->
+        <div id="burger" class="burger">
+          <p id="foodCategory">Burger</p>
+        </div>
+
+        <!-- 2. -->
+        <div id="kebab" class="kebab">
+          <p id="foodCategory">Kebab</p>
+       </div>
+
+       <!-- 3. -->
+       <div id="pizza" class="pizza">
+        <p id="foodCategory">Pizza</p>
+       </div>
+
+        <!-- 4. -->
+        <div id="seafood" class="seafood">
+          <p id="foodCategory">Seafood</p>
+        </div>
+
+       <!-- 5. -->
+        <div id="sides" class="sides">
+          <p id="foodCategory">Sides</p>
+        </div>
+      </div>
+
+        
+      <div id="cartPage" class="cartToggle">
+        <p id="cartTitle">Cart items</p>
+        <p id="mTotalAmount">Total amount: 100 $</p>
+        <table>
+          <thead>
+            <td>Item</td>
+            <td>Name</td>
+            <td>Quantity</td>
+            <td>Price</td>
+          </thead>
+
+          <tbody id="tableBody"> 
+            
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+    
+    <div id="cart">
+      <div id="tasteHeader">
+        <div id="user" class="user">
+          <i class="fa fa-user-circle">Account</i>
+        </div>
+      </div>
+
+      <div id="categoryList">
+        <p class="itemMenu">Most popular</p>
+        <div id="border" class="border"></div>
+      </div>
+
+      <div id="checkout" class="cartToggle"> 
+        <p id="totalItem">Total item number: 0</p>
+        <p id="totalPrice">Total price: 0 $</p>
+        <p id="delievery">Free delievery above 40 $</p>
+        <button class="checkoutBtn">Checkout</button>
+      </div>
+    </div>
+
+  </div>
+
+    <script src="/index.js" type="module"></script>
+
+</body>
 </html>
