@@ -1,5 +1,6 @@
 # brzicheese
-
+A web application for ordering fast food.
+Created in Vue.
 ## Project setup
 ```
 npm install
